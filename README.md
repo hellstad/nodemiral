@@ -1,15 +1,16 @@
-# nodemiral (node + admiral) [![Build Status](https://travis-ci.org/arunoda/nodemiral.png?branch=master)](https://travis-ci.org/arunoda/nodemiral)
+# nodemiral-forcetty
 ### Server Automation for NodeJS over SSH
+Fork of arunoda's nodemiral with some hacks to run on RHEL/CentOS 7+
 
 ## Install
 ~~~js
-npm install nodemiral
+npm install nodemiral-forcetty
 ~~~
 
 ## Features
 
 * Support connecting to any unix remote server
-* Authenticate with password(using [`sshpass`](http://sourceforge.net/projects/sshpass/)) or with a `pem` file
+* Authenticate with password (using [`sshpass`](http://sourceforge.net/projects/sshpass/)) or with a `pem` file
 * Can work with multiple servers at once
 * Supports, `copy`, `execute` and `executeScript` at core methods
 * Familiar NodeJS API
@@ -28,7 +29,7 @@ session.execute('uname -a', function(err, code, logs) {
 
 ### Session
 
-Create a session to a remote server. You can invoke following methods after created a session
+Create a session to a remote server. You can invoke following methods after created a session.
 
     @param hostname - hostname or ip addess
     @param auth - object containing following fields: `username` and (`password` or `pem`)
@@ -43,7 +44,7 @@ Create a session to a remote server. You can invoke following methods after crea
 ### Session Methods
 
 #### execute
-execute given shell command on the remote server
+execute given shell command on the remote server.
 
     @param shellCommand - shellCommand
     @param options - {onStdout, onStderr}
@@ -66,7 +67,7 @@ execute a local shell script in the remote server. You can template shell script
     session.executeScript(localScriptFile, templateVars, callback);
 
 #### copy
-copy a file from local machine to the remote machine. Supports binary files too. Support EJS templating with non-binary files
+copy a file from local machine to the remote machine. Supports binary files too. Support EJS templating with non-binary files.
 
     @param localFile - localFile
     @param remoteFileLocation - remoteFileLocation
