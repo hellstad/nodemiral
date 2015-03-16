@@ -1,6 +1,6 @@
 {
   "name": "nodemiral-forcetty",
-  "version": "0.3.11",
+  "version": "0.3.13",
   "description": "Server Automation for NodeJS over SSH",
   "main": "lib/nodemiral.js",
   "dependencies": {
@@ -13,6 +13,24 @@
     "mocha": "1.x"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
-  }
+    "test": "mocha"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hellstad/nodemiral-forcetty.git"
+  },
+  "keywords": [
+    "nodemiral",
+    "requiretty",
+    "centos",
+    "rhel"
+  ],
+  "bugs": {
+    "url": "https://github.com/hellstad/nodemiral-forcetty/issues"
+  },
+  "homepage": "https://github.com/hellstad/nodemiral-forcetty"
 }
