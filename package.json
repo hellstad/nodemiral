@@ -1,5 +1,5 @@
 {
-  "name": "nodemiral",
+  "name": "nodemiral-forcetty",
   "version": "0.3.11",
   "description": "Server Automation for NodeJS over SSH",
   "main": "lib/nodemiral.js",
