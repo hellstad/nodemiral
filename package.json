@@ -1,13 +1,14 @@
 {
   "name": "nodemiral-forcetty",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Server Automation for NodeJS over SSH",
   "main": "lib/nodemiral.js",
   "dependencies": {
     "ejs": "0.8.x",
     "debug": "0.7.x",
     "handlebars": "1.0.x",
-    "colors": "0.6.x"
+    "colors": "0.6.x",
+    "cli-spinner": "0.2.x"
   },
   "devDependencies": {
     "mocha": "1.x"
